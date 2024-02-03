@@ -1,28 +1,51 @@
-﻿string myName = "Nataliia";
+﻿int weight = 123 + 55;
+Console.WriteLine(weight);
 
-string yourName;
+int distance = 4568 - weight;
+Console.WriteLine(distance);
 
-yourName = "Jane";
+int example = 78546 / 16;
+Console.WriteLine(example);
 
-Console.WriteLine(yourName);
+int example2 = 56 * 3;
+Console.WriteLine(example2);
 
-yourName = "bob";
+int digit = 4;
+digit++;
+Console.WriteLine(digit);
 
-Console.WriteLine(yourName);
+digit--;
+    Console.WriteLine(digit);
 
-bool day = false;
-bool night = true;
+string name = "Jenny ";
+string lastName = "Potter ";
+int age = 18;
+String fullName = "Hello " + name + lastName + "Your age is " + age;
+Console.WriteLine(fullName);
 
-int weight = 123;
-int height = 55;
+bool ex1 = 20 > 6;
+Console.WriteLine(ex1);
 
-long distance = 92346484;
-long time = -372587958;
+bool ex2 = 20 == 6;
+Console.WriteLine(ex2);
 
-char char1 = 'w';
-char char2 = 'h';
+bool ex3 = 20 < 6;
+Console.WriteLine(ex3);
 
-string monthofbirth = "april";
-string traveldestination = "madrid";
+bool ex4 = 20 != 6;
+Console.WriteLine(ex4);
+
+bool ex5 = 20 >= 6;
+Console.WriteLine(ex5);
+
+bool ex6 = 20 <= 6;
+Console.WriteLine(ex6);
+
+bool result = true && true;
+Console.WriteLine(result);
+
+bool result2 = true || false;
+Console.WriteLine(result2);
+
 
 

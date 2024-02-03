@@ -12,3 +12,4 @@ C:\Users\nkara\source\repos\HelloWorld\HelloWorld\obj\Debug\net6.0\refint\HelloW
 C:\Users\nkara\source\repos\HelloWorld\HelloWorld\obj\Debug\net6.0\HelloWorld.pdb
 C:\Users\nkara\source\repos\HelloWorld\HelloWorld\obj\Debug\net6.0\HelloWorld.genruntimeconfig.cache
 C:\Users\nkara\source\repos\HelloWorld\HelloWorld\obj\Debug\net6.0\ref\HelloWorld.dll
+C:\Users\nkara\source\repos\HelloWorld\HelloWorld\obj\Debug\net6.0\HelloWorld.sourcelink.json
