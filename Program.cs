@@ -48,6 +48,3 @@ fruits2.Remove("Banana");
 int listlength = fruits2.Count;
 Console.WriteLine(listlength);
 
-
-
-
