@@ -1,72 +1,50 @@
+using System.ComponentModel;
 
-//Console.WriteLine("Enter your name:");
-//string name = Console.ReadLine();
-//Console.WriteLine("Enter your last name: ");
-//string lastName = Console.ReadLine();
-//Console.WriteLine("Enter your age: ");
-//string age = Console.ReadLine();
-//Console.WriteLine("Enter your occupation: ");
-//string occupation = Console.ReadLine();
-//int convertedAge = int.Parse(age);
-//Console.WriteLine("Hello " + name +" " + lastName + " "+ "I didn't think that you are " + convertedAge);
-//Console.WriteLine(occupation + " is a very interesting job.");
+int[] numbers = new int[5];
+numbers[0] = 1;
+numbers[1] = 2;
+numbers[2] = 3;
+numbers[3] = 4;
+numbers[4] = 5;
 
-int number = 50;
+Console.WriteLine(numbers[1]);
+Console.WriteLine(numbers[3]);
 
-if (number == 5)
-{ Console.WriteLine("your number is 5");}
-else
-{    Console.WriteLine("your number is not 5"); }
+string[] fruits = new string[3];
+fruits[0] = "Apple";
+fruits[1] = "Banana";
+fruits[2] = "Orange"; 
+Console.WriteLine(fruits[0]);
+Console.WriteLine(fruits[1]);
+Console.WriteLine(fruits[2]);
+fruits[2] = "Mango";
+Console.WriteLine(fruits[0]);
+Console.WriteLine(fruits[1]);
+Console.WriteLine(fruits[2]);
 
-if (number < 10)
-{ Console.WriteLine("your number is less than 10" ); }
-else
-{ Console.WriteLine("your number is bigger than 10"); }
+var length = numbers.Length;
+Console.WriteLine(length);
 
-if(number <= 25)
-{    Console.WriteLine("your number is 25 or less");}
-else
-{    Console.WriteLine("your number is not 25 or less");}
+var length2 = fruits.Length;
+Console.WriteLine(length2);
 
-if (number == 50)
-{    Console.WriteLine("your number is 50");}
-else
-{    Console.WriteLine("your number is not equal 50");}
+List<string> fruits2 = new List<string>();
+fruits2.Add("Apple");
+fruits2.Add("Banana");
+fruits2.Add("Orange");
 
-if (number > 50)
-{    Console.WriteLine("your number is bigger than 50");}
-else
-{    Console.WriteLine("your number is not bigger than 50");}
+Console.WriteLine(fruits2[0]);
+Console.WriteLine(fruits2[2]);
 
-if (number !=100)
-{    Console.WriteLine("your number is not 100");}
-else
-{    Console.WriteLine("your number is 100");}
+fruits2.Add("Mango");
+Console.WriteLine(fruits2[0]);
+Console.WriteLine(fruits2[1]);
+Console.WriteLine(fruits2[2]);
+Console.WriteLine(fruits2[3]);
 
-int number2 = 25;
-
-switch (number2)
-{
-    case 5:
-        Console.WriteLine("your number is 5");
-        break;
-    case 10:
-        Console.WriteLine("your number is 10");
-        break;
-    case 25:
-        Console.WriteLine("your number is 25");
-        break;
-    case 50:
-        Console.WriteLine("your number is 50");
-        break;
-}
+fruits2.Remove("Banana");
 
 
-
-
-
-
-
-
-
+int listlength = fruits2.Count;
+Console.WriteLine(listlength);
 
