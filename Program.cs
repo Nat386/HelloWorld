@@ -1,50 +1,56 @@
-using System.ComponentModel;
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine("Number: " + i);
 
-int[] numbers = new int[5];
-numbers[0] = 1;
-numbers[1] = 2;
-numbers[2] = 3;
-numbers[3] = 4;
-numbers[4] = 5;
+    if (i % 2 == 0)
+    {
+        Console.WriteLine("even number");
+    }
+    else
+    {
+        Console.WriteLine("odd number");
+    }
+}
 
-Console.WriteLine(numbers[1]);
-Console.WriteLine(numbers[3]);
+bool isValidInput = false;
+int number = 1;
 
-string[] fruits = new string[3];
-fruits[0] = "Apple";
-fruits[1] = "Banana";
-fruits[2] = "Orange"; 
-Console.WriteLine(fruits[0]);
-Console.WriteLine(fruits[1]);
-Console.WriteLine(fruits[2]);
-fruits[2] = "Mango";
-Console.WriteLine(fruits[0]);
-Console.WriteLine(fruits[1]);
-Console.WriteLine(fruits[2]);
+while (number <= 10)
+{
+    Console.WriteLine("Number: " + number);
 
-var length = numbers.Length;
-Console.WriteLine(length);
-
-var length2 = fruits.Length;
-Console.WriteLine(length2);
-
-List<string> fruits2 = new List<string>();
-fruits2.Add("Apple");
-fruits2.Add("Banana");
-fruits2.Add("Orange");
-
-Console.WriteLine(fruits2[0]);
-Console.WriteLine(fruits2[2]);
-
-fruits2.Add("Mango");
-Console.WriteLine(fruits2[0]);
-Console.WriteLine(fruits2[1]);
-Console.WriteLine(fruits2[2]);
-Console.WriteLine(fruits2[3]);
-
-fruits2.Remove("Banana");
+    if (number % 3 == 0)
+    {
+        Console.WriteLine("can be divided by 3");
+    }
+    else
+    {
+        Console.WriteLine("cannot be divided by 3");
+    }
+    number++;
+}
 
 
-int listlength = fruits2.Count;
-Console.WriteLine(listlength);
+
+int guess = 0;
+do
+{
+    Console.WriteLine("Try to guess the number:");
+    guess = Convert.ToInt32(Console.ReadLine());
+    if (guess > 5)
+        Console.WriteLine("Your number is bigger");
+    else if (guess < 5) Console.WriteLine("Your number is smaller");
+    else Console.WriteLine("Congratulations! You guessed the number");
+}
+while (guess != 5);
+
+
+int[] numbers = { 10, 20, 30, 40, 50 };
+foreach (int item in numbers)
+{ Console.WriteLine(item);
+    if (item < 30)
+        Console.WriteLine(item + " is less than 30");
+    else if (item > 30) Console.WriteLine(item + " is bigger than 30");
+        else if (item == 30) Console.WriteLine(item + " is equal 30");
+    }
 
